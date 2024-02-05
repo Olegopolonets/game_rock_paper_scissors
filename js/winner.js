@@ -8,8 +8,8 @@ const params = new URLSearchParams(window.location.search);
 
 const choiceToImageMap = {
   0: { image: "rock.png", alt: "Rock" },
-  1: { image: "scissors.png", alt: "Scissors" },
-  2: { image: "paper.png", alt: "Parer" },
+  1: { image: "paper.png", alt: "Parer" },
+  2: { image: "scissors.png", alt: "Scissors" },
 };
 
 let user, computer, winner;
@@ -31,17 +31,17 @@ const checkWinner = () => {
   if (user === computer) {
     winner = "tie";
   } else if (user === "0" && computer === "1") {
-    winner = "you";
+    winner = "computer";
   } else if (user === "0" && computer === "2") {
-    winner = "computer";
+    winner = "you";
   } else if (user === "1" && computer === "0") {
-    winner = "computer";
+    winner = "you";
   } else if (user === "1" && computer === "2") {
-    winner = "you";
-  } else if (user === "2" && computer === "0") {
-    winner = "you";
-  } else if (user === "2" && computer === "1") {
     winner = "computer";
+  } else if (user === "2" && computer === "0") {
+    winner = "computer";
+  } else if (user === "2" && computer === "1") {
+    winner = "you";
   }
 
   if (winner === "tie") {
