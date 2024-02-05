@@ -6,6 +6,6 @@ buttons.forEach((button, i) => {
     console.log("user", userChoise);
     const computerChoise = Math.floor(Math.random() * 3);
     console.log("computer", computerChoise);
-    window.location.href = `/winner.html?user=${userChoise}&computer=${computerChoise}`;
+    window.location.href = `./winner.html?user=${userChoise}&computer=${computerChoise}`;
   });
 });
