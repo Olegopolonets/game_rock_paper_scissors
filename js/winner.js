@@ -17,9 +17,9 @@ let user, computer, winner;
 user = params.get("user");
 computer = params.get("computer");
 
-userImage.src = `../images/${choiceToImageMap[user].image}`;
+userImage.src = `./images/${choiceToImageMap[user].image}`;
 userImage.alt = choiceToImageMap[user].alt;
-computerImage.src = `../images/${choiceToImageMap[computer].image}`;
+computerImage.src = `./images/${choiceToImageMap[computer].image}`;
 userImage.alt = choiceToImageMap[computer].alt;
 
 playAgain.addEventListener("click", () => {
